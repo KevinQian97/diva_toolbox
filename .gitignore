@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# data folder
+anno_gen/data
+anno_gen/data_backup

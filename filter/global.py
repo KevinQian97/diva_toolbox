@@ -1,12 +1,23 @@
 import os
 import json
-base_path = "/data/kevinq/exps/1596864516.976852"
+import decord
+from decord import VideoReader
+base_path = "/home/data/exps/1620060644.3474147"
+pred_frames = 64
+filter_rate = 0.4
+video_path = "/home/lijun/datasets/actev-datasets/MEVA/videos"
+# video_path = "/home/kevinq/datasets/VIRAT/videos"
+sum_frame = 0
 event_path = os.path.join(base_path,"event-wise")
 findex = list(json.load(open(os.path.join(base_path,"file-index.json"),"r")).keys())
-
+for vid in findex:
+    print(vid)
+    vr = VideoReader(os.path.join(video_path,vid))
+    sum_frame+=len(vr)
 
 events = os.listdir(event_path)
-loc = int(100*9000/64*0.4)
+
+loc = int(sum_frame/pred_frames*filter_rate)
 
 new_dict = {"filesProcessed":[],"activities":[]}
 for event in events:
@@ -18,6 +29,8 @@ for event in events:
     for act in acts:
         rank_list.append(act["presenceConf"])
     rank_list.sort()
+    if loc >= len(rank_list):
+        loc = len(rank_list)-1
     score = rank_list[-loc]
     for act in acts:
         if act["presenceConf"] >= score:

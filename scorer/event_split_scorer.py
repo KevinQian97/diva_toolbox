@@ -2,8 +2,8 @@ import json
 import os
 from multiprocessing import Pool
 
-
-base_path = "/data/kevinq/exps/1596864516.976852"
+dataset = "MEVA"
+base_path = "/home/data/exps/1620060644.3474147"
 json_path = os.path.join(base_path,"output.json")
 act_path = os.path.join(base_path,"activity-index.json")
 output_folder = os.path.join(base_path,"event-wise")
@@ -38,7 +38,10 @@ js = json.load(open(json_path,"r"))
 filesProcessed = js["filesProcessed"]
 activities = js["activities"]
 acts_index = json.load(open(act_path,"r"))
-f = open("./labels.txt","r")
+if dataset=="MEVA":
+    f = open("./labels.txt","r")
+else:
+    f = open("./labels_virat.txt","r")
 events = f.readlines()
 event_list = []
 for event in events:

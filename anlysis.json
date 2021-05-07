@@ -1,0 +1,566 @@
+{
+    "person_puts_down_object": {
+        "trn_neg": 78970, 
+        "tst_num": 178, 
+        "trn_pos": 3947, 
+        "tst_pos": 1703, 
+        "tst_neg": 40972, 
+        "trn_num": 414, 
+        "temporal-bound": [
+            4, 
+            97, 
+            429, 
+            59, 
+            3
+        ]
+    }, 
+    "person_loads_vehicle": {
+        "trn_neg": 82862, 
+        "tst_num": 2, 
+        "trn_pos": 55, 
+        "tst_pos": 16, 
+        "tst_neg": 42659, 
+        "trn_num": 5, 
+        "temporal-bound": [
+            0, 
+            2, 
+            3, 
+            2, 
+            0
+        ]
+    }, 
+    "general": {
+        "temporal-bound": [
+            279, 
+            2311, 
+            2611, 
+            876, 
+            1005
+        ]
+    }, 
+    "vehicle_picks_up_person": {
+        "trn_neg": 82441, 
+        "tst_num": 3, 
+        "trn_pos": 476, 
+        "tst_pos": 57, 
+        "tst_neg": 42618, 
+        "trn_num": 9, 
+        "temporal-bound": [
+            0, 
+            1, 
+            1, 
+            0, 
+            10
+        ]
+    }, 
+    "person_exits_scene_through_structure": {
+        "trn_neg": 80297, 
+        "tst_num": 217, 
+        "trn_pos": 2620, 
+        "tst_pos": 1114, 
+        "tst_neg": 41561, 
+        "trn_num": 510, 
+        "temporal-bound": [
+            32, 
+            319, 
+            335, 
+            36, 
+            5
+        ]
+    }, 
+    "person_closes_vehicle_door": {
+        "trn_neg": 82024, 
+        "tst_num": 53, 
+        "trn_pos": 893, 
+        "tst_pos": 353, 
+        "tst_neg": 42322, 
+        "trn_num": 128, 
+        "temporal-bound": [
+            2, 
+            103, 
+            71, 
+            5, 
+            0
+        ]
+    }, 
+    "person_purchases": {
+        "trn_neg": 82793, 
+        "tst_num": 4, 
+        "trn_pos": 124, 
+        "tst_pos": 116, 
+        "tst_neg": 42559, 
+        "trn_num": 5, 
+        "temporal-bound": [
+            0, 
+            0, 
+            1, 
+            3, 
+            5
+        ]
+    }, 
+    "person_opens_trunk": {
+        "trn_neg": 82798, 
+        "tst_num": 5, 
+        "trn_pos": 119, 
+        "tst_pos": 64, 
+        "tst_neg": 42611, 
+        "trn_num": 12, 
+        "temporal-bound": [
+            0, 
+            1, 
+            11, 
+            4, 
+            1
+        ]
+    }, 
+    "person_abandons_package": {
+        "trn_neg": 82917, 
+        "tst_num": 0, 
+        "trn_pos": 0, 
+        "tst_pos": 0, 
+        "tst_neg": 42675, 
+        "trn_num": 0, 
+        "temporal-bound": [
+            0, 
+            0, 
+            0, 
+            0, 
+            0
+        ]
+    }, 
+    "person_picks_up_object": {
+        "trn_neg": 79452, 
+        "tst_num": 227, 
+        "trn_pos": 3465, 
+        "tst_pos": 1776, 
+        "tst_neg": 40899, 
+        "trn_num": 462, 
+        "temporal-bound": [
+            39, 
+            451, 
+            188, 
+            11, 
+            0
+        ]
+    }, 
+    "vehicle_stops": {
+        "trn_neg": 81862, 
+        "tst_num": 50, 
+        "trn_pos": 1055, 
+        "tst_pos": 475, 
+        "tst_neg": 42200, 
+        "trn_num": 113, 
+        "temporal-bound": [
+            4, 
+            23, 
+            111, 
+            24, 
+            1
+        ]
+    }, 
+    "person_interacts_with_laptop": {
+        "trn_neg": 81629, 
+        "tst_num": 0, 
+        "trn_pos": 1288, 
+        "tst_pos": 0, 
+        "tst_neg": 42675, 
+        "trn_num": 7, 
+        "temporal-bound": [
+            0, 
+            0, 
+            0, 
+            0, 
+            7
+        ]
+    }, 
+    "person_texts_on_phone": {
+        "trn_neg": 68082, 
+        "tst_num": 92, 
+        "trn_pos": 14835, 
+        "tst_pos": 8885, 
+        "tst_neg": 33790, 
+        "trn_num": 207, 
+        "temporal-bound": [
+            0, 
+            9, 
+            32, 
+            57, 
+            201
+        ]
+    }, 
+    "vehicle_drops_off_person": {
+        "trn_neg": 82520, 
+        "tst_num": 2, 
+        "trn_pos": 397, 
+        "tst_pos": 76, 
+        "tst_neg": 42599, 
+        "trn_num": 8, 
+        "temporal-bound": [
+            0, 
+            0, 
+            0, 
+            1, 
+            9
+        ]
+    }, 
+    "person_enters_scene_through_structure": {
+        "trn_neg": 80334, 
+        "tst_num": 211, 
+        "trn_pos": 2583, 
+        "tst_pos": 1106, 
+        "tst_neg": 41569, 
+        "trn_num": 545, 
+        "temporal-bound": [
+            37, 
+            445, 
+            249, 
+            24, 
+            1
+        ]
+    }, 
+    "person_talks_on_phone": {
+        "trn_neg": 79380, 
+        "tst_num": 29, 
+        "trn_pos": 3537, 
+        "tst_pos": 1445, 
+        "tst_neg": 41230, 
+        "trn_num": 61, 
+        "temporal-bound": [
+            0, 
+            5, 
+            7, 
+            16, 
+            62
+        ]
+    }, 
+    "vehicle_turns_right": {
+        "trn_neg": 81840, 
+        "tst_num": 40, 
+        "trn_pos": 1077, 
+        "tst_pos": 431, 
+        "tst_neg": 42244, 
+        "trn_num": 88, 
+        "temporal-bound": [
+            0, 
+            2, 
+            59, 
+            61, 
+            6
+        ]
+    }, 
+    "person_steals_object": {
+        "trn_neg": 82917, 
+        "tst_num": 0, 
+        "trn_pos": 0, 
+        "tst_pos": 0, 
+        "tst_neg": 42675, 
+        "trn_num": 0, 
+        "temporal-bound": [
+            0, 
+            0, 
+            0, 
+            0, 
+            0
+        ]
+    }, 
+    "person_closes_facility_door": {
+        "trn_neg": 82886, 
+        "tst_num": 2, 
+        "trn_pos": 31, 
+        "tst_pos": 22, 
+        "tst_neg": 42653, 
+        "trn_num": 5, 
+        "temporal-bound": [
+            0, 
+            0, 
+            6, 
+            1, 
+            0
+        ]
+    }, 
+    "vehicle_starts": {
+        "trn_neg": 81850, 
+        "tst_num": 52, 
+        "trn_pos": 1067, 
+        "tst_pos": 492, 
+        "tst_neg": 42183, 
+        "trn_num": 111, 
+        "temporal-bound": [
+            2, 
+            36, 
+            92, 
+            32, 
+            1
+        ]
+    }, 
+    "person_transfers_object": {
+        "trn_neg": 82226, 
+        "tst_num": 34, 
+        "trn_pos": 691, 
+        "tst_pos": 301, 
+        "tst_neg": 42374, 
+        "trn_num": 73, 
+        "temporal-bound": [
+            0, 
+            25, 
+            80, 
+            2, 
+            0
+        ]
+    }, 
+    "person_unloads_vehicle": {
+        "trn_neg": 82893, 
+        "tst_num": 2, 
+        "trn_pos": 24, 
+        "tst_pos": 21, 
+        "tst_neg": 42654, 
+        "trn_num": 3, 
+        "temporal-bound": [
+            1, 
+            2, 
+            1, 
+            1, 
+            0
+        ]
+    }, 
+    "person_rides_bicycle": {
+        "trn_neg": 82815, 
+        "tst_num": 0, 
+        "trn_pos": 102, 
+        "tst_pos": 0, 
+        "tst_neg": 42675, 
+        "trn_num": 3, 
+        "temporal-bound": [
+            0, 
+            1, 
+            0, 
+            1, 
+            1
+        ]
+    }, 
+    "person_embraces_person": {
+        "trn_neg": 82589, 
+        "tst_num": 22, 
+        "trn_pos": 328, 
+        "tst_pos": 283, 
+        "tst_neg": 42392, 
+        "trn_num": 28, 
+        "temporal-bound": [
+            0, 
+            0, 
+            40, 
+            9, 
+            1
+        ]
+    }, 
+    "person_talks_to_person": {
+        "trn_neg": 39309, 
+        "tst_num": 218, 
+        "trn_pos": 43608, 
+        "tst_pos": 22155, 
+        "tst_neg": 20520, 
+        "trn_num": 435, 
+        "temporal-bound": [
+            1, 
+            3, 
+            11, 
+            97, 
+            541
+        ]
+    }, 
+    "person_exits_vehicle": {
+        "trn_neg": 82348, 
+        "tst_num": 25, 
+        "trn_pos": 569, 
+        "tst_pos": 226, 
+        "tst_neg": 42449, 
+        "trn_num": 48, 
+        "temporal-bound": [
+            0, 
+            7, 
+            13, 
+            42, 
+            11
+        ]
+    }, 
+    "person_opens_facility_door": {
+        "trn_neg": 81486, 
+        "tst_num": 130, 
+        "trn_pos": 1431, 
+        "tst_pos": 783, 
+        "tst_neg": 41892, 
+        "trn_num": 257, 
+        "temporal-bound": [
+            73, 
+            114, 
+            187, 
+            13, 
+            0
+        ]
+    }, 
+    "vehicle_reverses": {
+        "trn_neg": 82388, 
+        "tst_num": 12, 
+        "trn_pos": 529, 
+        "tst_pos": 181, 
+        "tst_neg": 42494, 
+        "trn_num": 32, 
+        "temporal-bound": [
+            0, 
+            3, 
+            10, 
+            13, 
+            18
+        ]
+    }, 
+    "person_stands_up": {
+        "trn_neg": 81054, 
+        "tst_num": 157, 
+        "trn_pos": 1863, 
+        "tst_pos": 1113, 
+        "tst_neg": 41562, 
+        "trn_num": 273, 
+        "temporal-bound": [
+            51, 
+            298, 
+            81, 
+            0, 
+            0
+        ]
+    }, 
+    "person_carries_heavy_object": {
+        "trn_neg": 78968, 
+        "tst_num": 130, 
+        "trn_pos": 3949, 
+        "tst_pos": 1705, 
+        "tst_neg": 40970, 
+        "trn_num": 291, 
+        "temporal-bound": [
+            1, 
+            26, 
+            156, 
+            172, 
+            66
+        ]
+    }, 
+    "person_opens_vehicle_door": {
+        "trn_neg": 81994, 
+        "tst_num": 58, 
+        "trn_pos": 923, 
+        "tst_pos": 402, 
+        "tst_neg": 42273, 
+        "trn_num": 130, 
+        "temporal-bound": [
+            0, 
+            52, 
+            126, 
+            10, 
+            0
+        ]
+    }, 
+    "vehicle_turns_left": {
+        "trn_neg": 81741, 
+        "tst_num": 63, 
+        "trn_pos": 1176, 
+        "tst_pos": 731, 
+        "tst_neg": 41944, 
+        "trn_num": 91, 
+        "temporal-bound": [
+            0, 
+            3, 
+            60, 
+            82, 
+            9
+        ]
+    }, 
+    "vehicle_makes_u_turn": {
+        "trn_neg": 82675, 
+        "tst_num": 4, 
+        "trn_pos": 242, 
+        "tst_pos": 67, 
+        "tst_neg": 42608, 
+        "trn_num": 10, 
+        "temporal-bound": [
+            0, 
+            0, 
+            0, 
+            9, 
+            5
+        ]
+    }, 
+    "person_closes_trunk": {
+        "trn_neg": 82817, 
+        "tst_num": 6, 
+        "trn_pos": 100, 
+        "tst_pos": 47, 
+        "tst_neg": 42628, 
+        "trn_num": 12, 
+        "temporal-bound": [
+            0, 
+            11, 
+            5, 
+            2, 
+            0
+        ]
+    }, 
+    "person_reads_document": {
+        "trn_neg": 82128, 
+        "tst_num": 10, 
+        "trn_pos": 789, 
+        "tst_pos": 1039, 
+        "tst_neg": 41636, 
+        "trn_num": 15, 
+        "temporal-bound": [
+            0, 
+            0, 
+            2, 
+            2, 
+            21
+        ]
+    }, 
+    "person_enters_vehicle": {
+        "trn_neg": 81972, 
+        "tst_num": 32, 
+        "trn_pos": 945, 
+        "tst_pos": 337, 
+        "tst_neg": 42338, 
+        "trn_num": 77, 
+        "temporal-bound": [
+            2, 
+            3, 
+            22, 
+            65, 
+            17
+        ]
+    }, 
+    "person_sits_down": {
+        "trn_neg": 80582, 
+        "tst_num": 143, 
+        "trn_pos": 2335, 
+        "tst_pos": 1192, 
+        "tst_neg": 41483, 
+        "trn_num": 310, 
+        "temporal-bound": [
+            30, 
+            264, 
+            149, 
+            10, 
+            0
+        ]
+    }, 
+    "hand_interacts_with_person": {
+        "trn_neg": 82166, 
+        "tst_num": 27, 
+        "trn_pos": 751, 
+        "tst_pos": 294, 
+        "tst_neg": 42381, 
+        "trn_num": 64, 
+        "temporal-bound": [
+            0, 
+            5, 
+            73, 
+            10, 
+            3
+        ]
+    }
+}

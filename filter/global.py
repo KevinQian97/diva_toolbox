@@ -2,9 +2,9 @@ import os
 import json
 import decord
 from decord import VideoReader
-base_path = "/home/data/exps/1620060644.3474147"
+base_path = "/mnt/cache/exps/1619759302.8884728"
 pred_frames = 64
-filter_rate = 0.4
+filter_rate = 0.2
 video_path = "/home/lijun/datasets/actev-datasets/MEVA/videos"
 # video_path = "/home/kevinq/datasets/VIRAT/videos"
 sum_frame = 0

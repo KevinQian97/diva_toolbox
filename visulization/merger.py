@@ -88,8 +88,10 @@ class OverlapCubeMerger(Filter):
             if inter_slots == 1:
                 interpolated_acts.append(act)
                 continue
-            box_delta_stride = act[columns.x0:columns.y1 + 1] - \
-                prev_act[columns.x0:columns.y1 + 1] / inter_slots
+            # box_delta_stride = act[columns.x0:columns.y1 + 1] - \
+            #     prev_act[columns.x0:columns.y1 + 1] / inter_slots
+            box_delta_stride = (act[columns.x0:columns.y1 + 1] - \
+                prev_act[columns.x0:columns.y1 + 1]) / inter_slots
             for inter_i in range(1, inter_slots):
                 inter_act = prev_act.copy()
                 inter_act[[columns.t0, columns.t1]] += \

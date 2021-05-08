@@ -5,7 +5,7 @@ from typing import Tuple, Union
 import numpy as np
 import pandas as pd
 import torch
-from ops.merger import OverlapCubeMerger
+from merger import OverlapCubeMerger
 
 class ProposalType(IntEnum):
 

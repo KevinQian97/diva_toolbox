@@ -7,15 +7,49 @@ import pandas as pd
 from merger import OverlapCubeMerger
 import csv
 import argparse
+import torch
 
 parser = argparse.ArgumentParser(description="VIS JSON GEN")
-parser.add_argument('dataset', type=str,default="DET")
+parser.add_argument('--dataset', type=str,default="DET")
 parser.add_argument('--test_list', type=str, default="./test_videofolder.json")
 parser.add_argument('--prop_path',type = str,default = "/home/kevinq/datasets/KF1_DET/MEVA-kitware_eo_s2-test_99-filtered_det_v5")
 parser.add_argument('--output_filename',type = str,default = "output_vis.json")
 parser.add_argument("--vid_type",default=".avi",help="the type of input video files")
+parser.add_argument("--res_dict_path",default="/mnt/cache/exps/1619759302.8884728/mid_output")
 
 args = parser.parse_args()
+aug_dict = {34:31,14:1}
+if_aug = False
+
+def get_obj_types(event):
+    toks = event.split("_")
+    if "person" in toks and "vehicle" in toks :
+        return ["Vehicle","Person"]
+    elif "person" in toks:
+        return ["Person"]
+    elif "vehicle" in toks:
+        return ["Vehicle"]
+    else:
+        print (event)
+        raise RuntimeError("unknown events")
+
+def prep_map(item):
+    map_dict = {}
+    for i in range(1,len(item)):
+        map_dict[item[i]] = i-1
+    return map_dict
+
+def get_activity_index(activities):
+    new_dict = {}
+    for act in activities:
+        new_dict[act] = {"objectTypes":get_obj_types(act)}
+    return new_dict
+
+def get_file_index(filesProcessed):
+    new_dict = {}
+    for f in filesProcessed:
+        new_dict[f]={"framerate": 30.0, "selected": {"0": 1, "9000": 0}}
+    return new_dict
 
 def merge(annots):
     merge_dict = {"labels":annots[-1]["labels"],"database":{},"files":[]} 
@@ -103,7 +137,8 @@ def prepare_testlist_det_all(args):
         save_json.write(json_str) 
     return
 
-def getoutput_det(res_dict_path,event_dict,args):
+def getoutput_det(event_dict,args):
+    res_dict_path = args.res_dict_path
     prepare_testlist_det_all(args)
     database = json.load(open(args.test_list,"r"))["database"]
     props = os.listdir(os.path.join(args.prop_path,"proposal"))
@@ -139,7 +174,7 @@ def getoutput_det(res_dict_path,event_dict,args):
             cube_acts = CubeActivities(cube_tensor, vid_name+args.vid_type , ActivityTypeVIRAT)
 
         filtered_acts = merger(cube_acts)
-        acts = filtered_acts.to_official()
+        acts = filtered_acts.to_vis()
 
         # acts = cube_acts.to_official()
         for act in acts:
@@ -149,3 +184,17 @@ def getoutput_det(res_dict_path,event_dict,args):
     file_dict = get_file_index(new_dict["filesProcessed"])
     eve_dict = get_activity_index(event_dict)
     return new_dict,file_dict,eve_dict
+
+if args.dataset in ["DET","MASK","MEVA"]:
+    f = open("./labels_det.txt","r")
+elif args.dataset in ["VIRAT"]:
+    f = open("./labels_virat.txt","r")
+events = f.readlines()
+event_dict = []
+for event in events:
+    event_dict.append(event.strip())
+
+output_dict,file_dict,eve_dict = getoutput_det(event_dict,args)
+json_str = json.dumps(output_dict,indent=4)
+with open(args.output_filename, 'w') as save_json:
+    save_json.write(json_str)

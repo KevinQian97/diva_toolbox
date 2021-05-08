@@ -3,7 +3,7 @@ import os
 from multiprocessing import Pool
 
 dataset = "MEVA"
-base_path = "/home/data/exps/1620060644.3474147"
+base_path = "/mnt/cache/exps/1619759302.8884728"
 json_path = os.path.join(base_path,"output.json")
 act_path = os.path.join(base_path,"activity-index.json")
 output_folder = os.path.join(base_path,"event-wise")

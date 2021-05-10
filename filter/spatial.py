@@ -3,10 +3,11 @@ import json
 import decord
 from decord import VideoReader
 pred_frames = 64
-thresh = 4
 
-base_path = "/mnt/cache/exps/lijun_dp7"
-js = json.load(open(os.path.join(base_path,"output.json"),"r"))
+filter_dict = json.load(open("./max_kitware_trd3f_s2-test_214.json","r"))
+
+base_path = "/mnt/cache/exps/lijun_dp7_s2"
+js = json.load(open(os.path.join(base_path,"output_org.json"),"r"))
 new_dict = {"filesProcessed":[],"activities":[]}
 new_dict["filesProcessed"] = js["filesProcessed"]
 acts = js["activities"]
@@ -37,6 +38,10 @@ for act in acts:
 for act_type,v in merge_count.items():
     for vid,info in v.items():
         for start,scores in info.items():
+            if act_type not in filter_dict:
+                thresh = 2
+            else:
+                thresh = filter_dict[act_type]
             if len(scores)>thresh:
                 scores.sort()
                 scores = scores[-thresh:]
@@ -45,7 +50,7 @@ for act_type,v in merge_count.items():
                 "localization":{vid:{start:1,str(int(start)+pred_frames):0}},"activityID":act_map[act_type]})
 
 json_str = json.dumps(new_dict,indent=4)
-with open(os.path.join(base_path,"output_spa.json"), 'w') as save_json:
+with open(os.path.join(base_path,"output.json"), 'w') as save_json:
     save_json.write(json_str) 
 
 

@@ -2,10 +2,10 @@ import os
 import json
 import decord
 from decord import VideoReader
-base_path = "/mnt/cache/exps/1619759302.8884728"
+base_path = "/mnt/cache/exps/lijun_dp7_s2"
 pred_frames = 64
 filter_rate = 0.2
-video_path = "/home/lijun/datasets/actev-datasets/MEVA/videos"
+video_path = "/mnt/data/MEVA/videos"
 # video_path = "/home/kevinq/datasets/VIRAT/videos"
 sum_frame = 0
 event_path = os.path.join(base_path,"event-wise")

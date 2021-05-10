@@ -1,12 +1,12 @@
 import csv
 import os
 import json
-
-path = "/home/kevinq/exps/vmz_mask_reverse_s2/event-wise"
-jname = os.path.join(path,"grap.json")
+base_path = "/mnt/cache/exps/lijun_dp7_s2"
+path = os.path.join(base_path,"event-wise")
+jname = os.path.join(base_path,"grap.json")
 events = os.listdir(path)
 events.sort()
-targets = ["mean-nAUDC@0.2tfa","mean-p_miss@0.04tfa"]
+targets = ["mean-nAUDC@0.2tfa","mean-p_miss@0.02tfa"]
 new_dict = {}
 for event in events:
     new_dict[event] = {}

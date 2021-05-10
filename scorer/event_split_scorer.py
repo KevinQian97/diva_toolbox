@@ -3,17 +3,17 @@ import os
 from multiprocessing import Pool
 
 dataset = "MEVA"
-base_path = "/mnt/cache/exps/1619759302.8884728"
-json_path = os.path.join(base_path,"output.json")
+base_path = "/mnt/cache/exps/lijun_dp7_s2"
+json_path = os.path.join(base_path,"output_mod.json")
 act_path = os.path.join(base_path,"activity-index.json")
 output_folder = os.path.join(base_path,"event-wise")
 scorer_path = "/home/kevinq/repos/ActEV_Scorer"
-ref_path = "/home/kevinq/exps/kf1_test_s2.json"
-n_jobs = 64
+ref_path = "/home/kevinq/datasets/KF1_DET/referemce/kitware_trd3f_s2-test_214.json"
+n_jobs = 12
 is_filt = False
 if is_filt:
     filt_dict = json.load(open("./event_thresh.json","r"))
-is_calc = False
+is_calc = True
 
 
 def actev_scorer_api(command):

@@ -2,6 +2,7 @@ import os
 import json
 import decord
 from decord import VideoReader
+fix_frame = True
 base_path = "/mnt/cache/exps/lijun_dp7_s2"
 pred_frames = 64
 filter_rate = 0.2
@@ -10,10 +11,15 @@ video_path = "/mnt/data/MEVA/videos"
 sum_frame = 0
 event_path = os.path.join(base_path,"event-wise")
 findex = list(json.load(open(os.path.join(base_path,"file-index.json"),"r")).keys())
-for vid in findex:
-    print(vid)
-    vr = VideoReader(os.path.join(video_path,vid))
-    sum_frame+=len(vr)
+if not fix_frame:
+    for vid in findex:
+        print(vid)
+        vr = VideoReader(os.path.join(video_path,vid))
+        sum_frame+=len(vr)
+else:
+    for vid in findex:
+        print(vid)
+        sum_frame+=9000
 
 events = os.listdir(event_path)
 

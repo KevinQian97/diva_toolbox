@@ -24,14 +24,19 @@ for act in acts:
 max_count_dict = {}
 for act_type, info in freq_dict.items():
     if act_type not in max_count_dict:
-        max_count_dict[act_type] = 0
+        max_count_dict[act_type] = {}
     for vid_name, act_list in freq_dict[act_type].items():
         for frame in range(9000):
             overlap = 0
             for act in act_list:
                 if frame>=act["start"] and frame<=act["end"]:
                     overlap+=1
-            max_count_dict[act_type] = max(max_count_dict[act_type],overlap)
+            if overlap == 0:
+                continue
+            elif overlap not in max_count_dict[act_type]:
+                max_count_dict[act_type][overlap] = 1
+            else:
+                max_count_dict[act_type][overlap]+=1
 
 json_str = json.dumps(max_count_dict,indent=4)
 with open("./maxcount.json", 'w') as save_json:

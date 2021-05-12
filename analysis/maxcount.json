@@ -1,0 +1,193 @@
+{
+    "person_carries_heavy_object": {
+        "1": 25486,
+        "2": 3753,
+        "3": 2379,
+        "4": 1150,
+        "5": 368,
+        "6": 154,
+        "7": 37
+    },
+    "person_exits_scene_through_structure": {
+        "1": 29885,
+        "2": 4602,
+        "3": 741,
+        "4": 28
+    },
+    "person_opens_facility_door": {
+        "1": 20116,
+        "2": 675,
+        "3": 15
+    },
+    "person_picks_up_object": {
+        "1": 11129,
+        "2": 1304,
+        "3": 481,
+        "4": 195,
+        "5": 16,
+        "6": 15
+    },
+    "person_puts_down_object": {
+        "1": 10978,
+        "2": 1876,
+        "3": 487,
+        "4": 283,
+        "5": 34
+    },
+    "person_enters_scene_through_structure": {
+        "1": 24659,
+        "2": 5823,
+        "3": 849,
+        "4": 55,
+        "5": 48
+    },
+    "person_closes_vehicle_door": {
+        "1": 8500,
+        "2": 755,
+        "3": 49
+    },
+    "person_enters_vehicle": {
+        "1": 7511,
+        "2": 1891,
+        "3": 500
+    },
+    "person_opens_vehicle_door": {
+        "1": 10079,
+        "2": 1353,
+        "3": 154,
+        "4": 42
+    },
+    "person_talks_to_person": {
+        "1": 176500,
+        "2": 86271,
+        "3": 49150,
+        "4": 15622,
+        "5": 8169,
+        "6": 1828,
+        "12": 1669,
+        "13": 5403,
+        "14": 2796,
+        "15": 1321,
+        "8": 387,
+        "9": 160,
+        "10": 322,
+        "11": 265,
+        "7": 385,
+        "16": 1315,
+        "17": 85
+    },
+    "vehicle_reverses": {
+        "1": 12182,
+        "2": 135
+    },
+    "vehicle_starts": {
+        "1": 13638,
+        "2": 517
+    },
+    "vehicle_stops": {
+        "1": 13976,
+        "2": 758
+    },
+    "vehicle_turns_left": {
+        "1": 24445,
+        "2": 1084
+    },
+    "vehicle_turns_right": {
+        "1": 20128,
+        "2": 353
+    },
+    "person_talks_on_phone": {
+        "1": 76711,
+        "2": 2262
+    },
+    "person_closes_trunk": {
+        "1": 1803
+    },
+    "person_exits_vehicle": {
+        "1": 10020,
+        "2": 1109,
+        "3": 680,
+        "4": 153
+    },
+    "person_opens_trunk": {
+        "1": 1902
+    },
+    "person_transfers_object": {
+        "1": 4534,
+        "2": 85
+    },
+    "person_unloads_vehicle": {
+        "1": 715
+    },
+    "vehicle_makes_u_turn": {
+        "1": 5881
+    },
+    "person_closes_facility_door": {
+        "1": 859
+    },
+    "person_loads_vehicle": {
+        "1": 853
+    },
+    "person_reads_document": {
+        "1": 24675,
+        "2": 8496,
+        "3": 1608,
+        "4": 727,
+        "5": 181
+    },
+    "person_sits_down": {
+        "1": 8873,
+        "2": 1395,
+        "3": 135,
+        "4": 40
+    },
+    "person_texts_on_phone": {
+        "1": 86656,
+        "2": 26714,
+        "3": 8482,
+        "4": 9051,
+        "5": 6924,
+        "6": 4217,
+        "7": 847,
+        "8": 160,
+        "9": 125
+    },
+    "person_stands_up": {
+        "1": 6684,
+        "2": 506,
+        "3": 227,
+        "4": 76,
+        "5": 68,
+        "6": 17,
+        "7": 11,
+        "8": 4,
+        "9": 7,
+        "10": 7,
+        "11": 19,
+        "12": 56,
+        "13": 14,
+        "14": 15,
+        "15": 3,
+        "16": 3
+    },
+    "hand_interacts_with_person": {
+        "1": 9146,
+        "2": 290
+    },
+    "person_rides_bicycle": {
+        "1": 5577
+    },
+    "vehicle_drops_off_person": {
+        "1": 14162
+    },
+    "person_embraces_person": {
+        "1": 7101,
+        "2": 182
+    },
+    "person_purchases": {
+        "1": 1585
+    },
+    "vehicle_picks_up_person": {
+        "1": 3723
+    }
+}

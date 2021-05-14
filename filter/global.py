@@ -3,7 +3,7 @@ import json
 import decord
 from decord import VideoReader
 fix_frame = True
-base_path = "/mnt/cache/exps/lijun_dp7_s2"
+base_path = "/home/kevinq/exps"
 pred_frames = 64
 filter_rate = 0.2
 video_path = "/mnt/data/MEVA/videos"
@@ -25,7 +25,7 @@ events = os.listdir(event_path)
 
 loc = int(sum_frame/pred_frames*filter_rate)
 
-new_dict = {"filesProcessed":[],"activities":[]}
+new_dict = {"filesProcessed":[],"activities":[],"processingReport":{"siteSpecific":{},"fileStatuses":{}}}
 for event in events:
     rank_list = []
     js = json.load(open(os.path.join(event_path,event,"output.json")))
@@ -43,6 +43,8 @@ for event in events:
             new_dict["activities"].append(act)
 
 new_dict["filesProcessed"] = findex
+for f in new_dict["filesProcessed"]:
+    new_dict["processingReport"]["fileStatuses"][f] = {'status': 'success', 'message': ''}
 
 json_str = json.dumps(new_dict,indent=4)
 with open(os.path.join(base_path,"output_mod.json"), 'w') as save_json:

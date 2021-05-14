@@ -3,12 +3,12 @@ import os
 from multiprocessing import Pool
 
 dataset = "MEVA"
-base_path = "/mnt/cache/exps/lijun_dp7_s2"
+base_path = "/home/kevinq/exps"
 json_path = os.path.join(base_path,"output_mod.json")
 act_path = os.path.join(base_path,"activity-index.json")
 output_folder = os.path.join(base_path,"event-wise")
 scorer_path = "/home/kevinq/repos/ActEV_Scorer"
-ref_path = "/home/kevinq/datasets/KF1_DET/referemce/kitware_trd3f_s2-test_214.json"
+ref_path = "/home/kevinq/datasets/KF1_DET/reference/kitware_trd3f_s2-test_214.json"
 n_jobs = 12
 is_filt = False
 if is_filt:
@@ -25,7 +25,7 @@ def prepare_commands(ref_path,base_path,output_folder,scorer_path,events):
     commands = []
     for event in events:
         path = os.path.join(output_folder,event)
-        command = "python {}/ActEV_Scorer.py ActEV_SDL_V2 -s {}/output.json -r {} -a {}/activity-index.json -f {}/file-index.json -o {}".format(scorer_path.strip("\n"),\
+        command = "python {}/ActEV_Scorer.py ActEV_SDL_V2 -s {}/output.json -r {} -a {}/activity-index.json -f {}/file-index.json -o {} -v".format(scorer_path.strip("\n"),\
             path.strip("\n"),ref_path.strip("\n"),path.strip("\n"),base_path.strip("\n"),path.strip("\n"))
         commands.append(command)
     return commands
@@ -37,6 +37,12 @@ if not os.path.exists(output_folder):
 js = json.load(open(json_path,"r")) 
 filesProcessed = js["filesProcessed"]
 activities = js["activities"]
+if "processingReport" not in js:
+    report = {"siteSpecific":{},"fileStatuses":{}}
+    for f in filesProcessed:
+        report["fileStatuses"][f] = {'status': 'success', 'message': ''}
+else:
+    report = js["processingReport"]
 acts_index = json.load(open(act_path,"r"))
 if dataset=="MEVA":
     f = open("./labels.txt","r")
@@ -62,6 +68,7 @@ for event in event_list:
     jname = "output.json"
     new_dict = {}
     new_dict["filesProcessed"] = filesProcessed
+    new_dict["processingReport"] = report
     new_dict["activities"] = event_dict[event]
     json_str = json.dumps(new_dict,indent=4)
     with open(os.path.join(output_folder,event,jname), 'w') as save_json:

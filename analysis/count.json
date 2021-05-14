@@ -1,0 +1,562 @@
+{
+    "person_carries_heavy_object": {
+        "1": {
+            "overlap": 25486,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "2": {
+            "overlap": 3753,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "3": {
+            "overlap": 2379,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "4": {
+            "overlap": 1150,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "5": {
+            "overlap": 368,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "6": {
+            "overlap": 154,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "7": {
+            "overlap": 37,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        }
+    },
+    "person_exits_scene_through_structure": {
+        "1": {
+            "overlap": 29885,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 4602,
+            "vid_name": "2018-03-12.11-10-01.11-15-00.school.G419.avi"
+        },
+        "3": {
+            "overlap": 741,
+            "vid_name": "2018-03-11.16-35-01.16-40-01.school.G420.avi"
+        },
+        "4": {
+            "overlap": 28,
+            "vid_name": "2018-03-11.16-35-01.16-40-01.school.G420.avi"
+        }
+    },
+    "person_opens_facility_door": {
+        "1": {
+            "overlap": 20116,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 675,
+            "vid_name": "2018-03-11.16-35-01.16-40-01.school.G420.avi"
+        },
+        "3": {
+            "overlap": 15,
+            "vid_name": "2018-03-11.16-35-01.16-40-01.school.G420.avi"
+        }
+    },
+    "person_picks_up_object": {
+        "1": {
+            "overlap": 11129,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "2": {
+            "overlap": 1304,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "3": {
+            "overlap": 481,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "4": {
+            "overlap": 195,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "5": {
+            "overlap": 16,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "6": {
+            "overlap": 15,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        }
+    },
+    "person_puts_down_object": {
+        "1": {
+            "overlap": 10978,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "2": {
+            "overlap": 1876,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "3": {
+            "overlap": 487,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "4": {
+            "overlap": 283,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "5": {
+            "overlap": 34,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        }
+    },
+    "person_enters_scene_through_structure": {
+        "1": {
+            "overlap": 24659,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 5823,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "3": {
+            "overlap": 849,
+            "vid_name": "2018-03-12.10-40-01.10-45-01.school.G419.avi"
+        },
+        "4": {
+            "overlap": 55,
+            "vid_name": "2018-03-11.14-15-00.14-20-00.school.G638.avi"
+        },
+        "5": {
+            "overlap": 48,
+            "vid_name": "2018-03-07.16-55-06.17-00-06.school.G336.avi"
+        }
+    },
+    "person_closes_vehicle_door": {
+        "1": {
+            "overlap": 8500,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 755,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "3": {
+            "overlap": 49,
+            "vid_name": "2018-03-11.12-00-00.12-05-00.school.G336.avi"
+        }
+    },
+    "person_enters_vehicle": {
+        "1": {
+            "overlap": 7511,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 1891,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "3": {
+            "overlap": 500,
+            "vid_name": "2018-03-11.17-25-01.17-30-01.school.G336.avi"
+        }
+    },
+    "person_opens_vehicle_door": {
+        "1": {
+            "overlap": 10079,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 1353,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "3": {
+            "overlap": 154,
+            "vid_name": "2018-03-11.16-25-02.16-30-02.school.G424.avi"
+        },
+        "4": {
+            "overlap": 42,
+            "vid_name": "2018-03-11.16-25-02.16-30-02.school.G424.avi"
+        }
+    },
+    "person_talks_to_person": {
+        "1": {
+            "overlap": 176500,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 86271,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "3": {
+            "overlap": 49150,
+            "vid_name": "2018-03-13.16-00-08.16-05-08.school.G300.avi"
+        },
+        "4": {
+            "overlap": 15622,
+            "vid_name": "2018-03-13.16-00-08.16-05-08.school.G300.avi"
+        },
+        "5": {
+            "overlap": 8169,
+            "vid_name": "2018-03-11.11-55-00.12-00-00.school.G330.avi"
+        },
+        "6": {
+            "overlap": 1828,
+            "vid_name": "2018-03-11.11-55-00.12-00-00.school.G330.avi"
+        },
+        "12": {
+            "overlap": 1669,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "13": {
+            "overlap": 5403,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "14": {
+            "overlap": 2796,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "15": {
+            "overlap": 1321,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "8": {
+            "overlap": 387,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "9": {
+            "overlap": 160,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "10": {
+            "overlap": 322,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "11": {
+            "overlap": 265,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "7": {
+            "overlap": 385,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "16": {
+            "overlap": 1315,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "17": {
+            "overlap": 85,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        }
+    },
+    "vehicle_reverses": {
+        "1": {
+            "overlap": 12182,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 135,
+            "vid_name": "2018-03-07.17-00-00.17-05-00.bus.G340.avi"
+        }
+    },
+    "vehicle_starts": {
+        "1": {
+            "overlap": 13638,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 517,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    },
+    "vehicle_stops": {
+        "1": {
+            "overlap": 13976,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 758,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    },
+    "vehicle_turns_left": {
+        "1": {
+            "overlap": 24445,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 1084,
+            "vid_name": "2018-03-11.17-10-01.17-15-01.school.G336.avi"
+        }
+    },
+    "vehicle_turns_right": {
+        "1": {
+            "overlap": 20128,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 353,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    },
+    "person_talks_on_phone": {
+        "1": {
+            "overlap": 76711,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.school.G638.avi"
+        },
+        "2": {
+            "overlap": 2262,
+            "vid_name": "2018-03-11.16-35-01.16-40-01.school.G420.avi"
+        }
+    },
+    "person_closes_trunk": {
+        "1": {
+            "overlap": 1803,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        }
+    },
+    "person_exits_vehicle": {
+        "1": {
+            "overlap": 10020,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 1109,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "3": {
+            "overlap": 680,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "4": {
+            "overlap": 153,
+            "vid_name": "2018-03-11.16-25-02.16-30-02.school.G424.avi"
+        }
+    },
+    "person_opens_trunk": {
+        "1": {
+            "overlap": 1902,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        }
+    },
+    "person_transfers_object": {
+        "1": {
+            "overlap": 4534,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        },
+        "2": {
+            "overlap": 85,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        }
+    },
+    "person_unloads_vehicle": {
+        "1": {
+            "overlap": 715,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        }
+    },
+    "vehicle_makes_u_turn": {
+        "1": {
+            "overlap": 5881,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    },
+    "person_closes_facility_door": {
+        "1": {
+            "overlap": 859,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    },
+    "person_loads_vehicle": {
+        "1": {
+            "overlap": 853,
+            "vid_name": "2018-03-11.11-55-01.12-00-01.school.G424.avi"
+        }
+    },
+    "person_reads_document": {
+        "1": {
+            "overlap": 24675,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "2": {
+            "overlap": 8496,
+            "vid_name": "2018-03-07.16-55-00.17-00-00.school.G421.avi"
+        },
+        "3": {
+            "overlap": 1608,
+            "vid_name": "2018-03-07.16-55-00.17-00-00.bus.G331.avi"
+        },
+        "4": {
+            "overlap": 727,
+            "vid_name": "2018-03-07.11-05-00.11-10-00.bus.G331.avi"
+        },
+        "5": {
+            "overlap": 181,
+            "vid_name": "2018-03-07.11-05-00.11-10-00.bus.G331.avi"
+        }
+    },
+    "person_sits_down": {
+        "1": {
+            "overlap": 8873,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "2": {
+            "overlap": 1395,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G330.avi"
+        },
+        "3": {
+            "overlap": 135,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "4": {
+            "overlap": 40,
+            "vid_name": "2018-03-11.11-30-00.11-35-00.school.G330.avi"
+        }
+    },
+    "person_texts_on_phone": {
+        "1": {
+            "overlap": 86656,
+            "vid_name": "2018-03-11.17-25-01.17-30-01.school.G336.avi"
+        },
+        "2": {
+            "overlap": 26714,
+            "vid_name": "2018-03-11.17-25-01.17-30-01.school.G336.avi"
+        },
+        "3": {
+            "overlap": 8482,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "4": {
+            "overlap": 9051,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "5": {
+            "overlap": 6924,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "6": {
+            "overlap": 4217,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "7": {
+            "overlap": 847,
+            "vid_name": "2018-03-09.10-25-00.10-30-00.school.G330.avi"
+        },
+        "8": {
+            "overlap": 160,
+            "vid_name": "2018-03-09.10-25-00.10-30-00.school.G330.avi"
+        },
+        "9": {
+            "overlap": 125,
+            "vid_name": "2018-03-09.10-25-00.10-30-00.school.G330.avi"
+        }
+    },
+    "person_stands_up": {
+        "1": {
+            "overlap": 6684,
+            "vid_name": "2018-03-11.16-40-00.16-45-00.school.G299.avi"
+        },
+        "2": {
+            "overlap": 506,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "3": {
+            "overlap": 227,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "4": {
+            "overlap": 76,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        },
+        "5": {
+            "overlap": 68,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "6": {
+            "overlap": 17,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "7": {
+            "overlap": 11,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "8": {
+            "overlap": 4,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "9": {
+            "overlap": 7,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "10": {
+            "overlap": 7,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "11": {
+            "overlap": 19,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "12": {
+            "overlap": 56,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "13": {
+            "overlap": 14,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "14": {
+            "overlap": 15,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "15": {
+            "overlap": 3,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        },
+        "16": {
+            "overlap": 3,
+            "vid_name": "2018-03-11.11-45-00.11-50-00.school.G330.avi"
+        }
+    },
+    "hand_interacts_with_person": {
+        "1": {
+            "overlap": 9146,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "2": {
+            "overlap": 290,
+            "vid_name": "2018-03-11.11-55-00.12-00-00.school.G299.avi"
+        }
+    },
+    "person_rides_bicycle": {
+        "1": {
+            "overlap": 5577,
+            "vid_name": "2018-03-07.17-25-05.17-30-05.hospital.G341.avi"
+        }
+    },
+    "vehicle_drops_off_person": {
+        "1": {
+            "overlap": 14162,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    },
+    "person_embraces_person": {
+        "1": {
+            "overlap": 7101,
+            "vid_name": "2018-03-12.11-00-00.11-05-00.hospital.G341.avi"
+        },
+        "2": {
+            "overlap": 182,
+            "vid_name": "2018-03-11.16-25-00.16-30-00.school.G299.avi"
+        }
+    },
+    "person_purchases": {
+        "1": {
+            "overlap": 1585,
+            "vid_name": "2018-03-07.16-55-00.17-00-00.school.G421.avi"
+        }
+    },
+    "vehicle_picks_up_person": {
+        "1": {
+            "overlap": 3723,
+            "vid_name": "2018-03-15.14-55-00.15-00-00.school.G339.avi"
+        }
+    }
+}

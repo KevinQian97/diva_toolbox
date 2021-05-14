@@ -2,7 +2,7 @@ import json
 import os
 import numpy as np
 
-input_path = "/home/kevinq/datasets/KF1_DET/referemce/kitware_trd3f_s2-test_214.json"
+input_path = "/home/kevinq/datasets/KF1_DET/reference/kitware_trd3f_s2-test_214.json"
 gt = json.load(open(input_path,"r"))
 acts = gt["activities"]
 freq_dict = {}
@@ -34,12 +34,13 @@ for act_type, info in freq_dict.items():
             if overlap == 0:
                 continue
             elif overlap not in max_count_dict[act_type]:
-                max_count_dict[act_type][overlap] = 1
+                max_count_dict[act_type][overlap] = {"overlap":1,"vid_name":vid_name}
             else:
-                max_count_dict[act_type][overlap]+=1
+                max_count_dict[act_type][overlap]["overlap"]+=1
+                max_count_dict[act_type][overlap]["vid_name"] = vid_name
 
 json_str = json.dumps(max_count_dict,indent=4)
-with open("./maxcount.json", 'w') as save_json:
+with open("./count.json", 'w') as save_json:
     save_json.write(json_str) 
 
 

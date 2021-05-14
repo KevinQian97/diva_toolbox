@@ -1,7 +1,7 @@
 import csv
 import os
 import json
-base_path = "/mnt/cache/exps/lijun_dp7_s2"
+base_path = "/home/kevinq/exps"
 path = os.path.join(base_path,"event-wise")
 jname = os.path.join(base_path,"grap.json")
 events = os.listdir(path)

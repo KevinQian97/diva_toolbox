@@ -2,7 +2,7 @@ import json
 import os
 import numpy as np
 
-input_path = "/home/kevinq/datasets/KF1_DET/reference/kitware_trd3f_s2-test_214.json"
+input_path = "/home/kevinq/datasets/KF1_DET/reference/kitware_trd11f-all_2203.json"
 gt = json.load(open(input_path,"r"))
 acts = gt["activities"]
 freq_dict = {}

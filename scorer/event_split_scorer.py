@@ -3,18 +3,17 @@ import os
 from multiprocessing import Pool
 
 dataset = "MEVA"
-base_path = "/home/kevinq/exps"
-json_path = os.path.join(base_path,"output_mod.json")
+base_path = "/home/kevinq/exps/round3"
+json_path = os.path.join(base_path,"output.json")
 act_path = os.path.join(base_path,"activity-index.json")
 output_folder = os.path.join(base_path,"event-wise")
 scorer_path = "/home/kevinq/repos/ActEV_Scorer"
 ref_path = "/home/kevinq/datasets/KF1_DET/reference/kitware_trd3f_s2-test_214.json"
-n_jobs = 12
+n_jobs = 14
 is_filt = False
 if is_filt:
     filt_dict = json.load(open("./event_thresh.json","r"))
-is_calc = True
-
+is_calc = False
 
 def actev_scorer_api(command):
     print(command)
@@ -25,7 +24,7 @@ def prepare_commands(ref_path,base_path,output_folder,scorer_path,events):
     commands = []
     for event in events:
         path = os.path.join(output_folder,event)
-        command = "python {}/ActEV_Scorer.py ActEV_SDL_V2 -s {}/output.json -r {} -a {}/activity-index.json -f {}/file-index.json -o {} -v".format(scorer_path.strip("\n"),\
+        command = "python {}/ActEV_Scorer.py ActEV_SDL_V2 -s {}/output.json -r {} -a {}/activity-index.json -f {}/file-index.json -o {} -v --det-point-resolution 1024".format(scorer_path.strip("\n"),\
             path.strip("\n"),ref_path.strip("\n"),path.strip("\n"),base_path.strip("\n"),path.strip("\n"))
         commands.append(command)
     return commands

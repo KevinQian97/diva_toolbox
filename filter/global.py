@@ -3,14 +3,17 @@ import json
 import decord
 from decord import VideoReader
 fix_frame = True
-base_path = "/home/kevinq/exps"
+base_path = "/home/kevinq/exps/round3"
 pred_frames = 64
 filter_rate = 0.2
 video_path = "/mnt/data/MEVA/videos"
 # video_path = "/home/kevinq/datasets/VIRAT/videos"
 sum_frame = 0
 event_path = os.path.join(base_path,"event-wise")
-findex = list(json.load(open(os.path.join(base_path,"file-index.json"),"r")).keys())
+if not os.path.exists(os.path.join(base_path,"file-index.json")):
+    findex = json.load(open(os.path.join(base_path,"output.json")))["filesProcessed"]
+else:
+    findex = list(json.load(open(os.path.join(base_path,"file-index.json"),"r")).keys())
 if not fix_frame:
     for vid in findex:
         print(vid)
